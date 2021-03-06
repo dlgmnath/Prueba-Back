@@ -2,6 +2,8 @@ import express from 'express'
 import packJson from '../package.json'
 import morgan from 'morgan'
 
+import cuponesRoutes from './routes/cupones.routes' 
+
 const app = express()
 app.set('packJson',packJson)
 
@@ -15,4 +17,5 @@ app.get('/', (req,res) => {
     })
 })
 
+app.use('/cupones', cuponesRoutes)
 export default app;
