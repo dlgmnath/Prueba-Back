@@ -1,0 +1,87 @@
+[{
+  "_id": {
+    "$oid": "604326e9f11d230b102449fe"
+  },
+  "id": 123,
+  "name": "CU_equipos",
+  "valid_since": {
+    "$date": "2020-12-25T05:00:00Z"
+  },
+  "valid_until": {
+    "$date": "2021-12-25T05:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604326f42232464550aae6e2"
+  },
+  "id": 123,
+  "name": "CU_equipos",
+  "valid_since": {
+    "$date": "2020-12-25T05:00:00Z"
+  },
+  "valid_until": {
+    "$date": "2021-12-25T05:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6043294aee23e44150aeeff1"
+  },
+  "name": "CU_Alimentos",
+  "valid_since": {
+    "$date": "2020-12-25T05:00:00Z"
+  },
+  "valid_until": {
+    "$date": "2021-12-25T05:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60432acfca31d11f784a1d75"
+  },
+  "name": "CU_Descuento",
+  "valid_since": {
+    "$date": "2020-12-25T05:00:00Z"
+  },
+  "valid_until": {
+    "$date": "2021-12-25T05:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6043c05c561b8543582e1909"
+  },
+  "name": "CU_test",
+  "valid_since": {
+    "$date": "2020-12-25T05:00:00Z"
+  },
+  "valid_until": {
+    "$date": "2021-12-25T05:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6043c14675ea7b08ac0a8c28"
+  },
+  "name": "CU_test",
+  "valid_since": {
+    "$date": "2020-12-25T05:00:00Z"
+  },
+  "valid_until": {
+    "$date": "2021-12-25T05:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6043c25a3493091fd474e82d"
+  },
+  "name": "CU_test",
+  "valid_since": {
+    "$date": "2020-12-25T05:00:00Z"
+  },
+  "valid_until": {
+    "$date": "2021-12-25T05:00:00Z"
+  },
+  "__v": 0
+}]
