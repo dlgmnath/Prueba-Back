@@ -31,9 +31,10 @@ export const singUp = async (req,res) => {
 
 
 export const singIn = async (req,res) => {
-    const usuarioEncontrado = await (await usuariosModel.findOne({email: req.body.email})).populate("roles");
+    const usuarioEncontrado = await usuariosModel.findOne({ email: req.body.email }).populate(
+        "roles"
+      );
     if(!usuarioEncontrado) return res.status(400).json({message: "usuario no encontrado"})
-    
     const comparar = await usuariosModel.comparePassword(req.body.password, usuarioEncontrado.password)
     if(!comparar) return res.status(401).json({token: null, message: 'contraseña invalida'})
 
