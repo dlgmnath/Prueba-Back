@@ -3,8 +3,12 @@ import packJson from '../package.json'
 import morgan from 'morgan'
 
 import cuponesRoutes from './routes/cupones.routes' 
+import authRoutes from './routes/auth.routes' 
+import {crearRoles } from './libs/initialSetup'
 
 const app = express()
+crearRoles()
+
 app.use(express.json())
 app.set('packJson',packJson)
 
@@ -18,5 +22,6 @@ app.get('/', (req,res) => {
     })
 })
 
-app.use('/cupones', cuponesRoutes)
+app.use('/api/cupones', cuponesRoutes)
+app.use('/api/auth', authRoutes)
 export default app;
