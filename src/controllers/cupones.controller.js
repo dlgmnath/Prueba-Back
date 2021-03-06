@@ -3,8 +3,8 @@ import cuponesModel from '../models/cupones'
 export const crearCupon = async (req,res) => {
     const { name, descriptios, product_is , valid_since, valid_until } = req.body;
     const nuevoCupon = new cuponesModel({ name, descriptios, product_is , valid_since, valid_until })
-    const cuaposGuardado = await nuevoCupon.save();
-    res.status(201).json(cuaposGuardado)
+    const cuponGuardado = await nuevoCupon.save();
+    res.status(201).json(cuponGuardado)
 }
 
 export const obtenerCupon = async (req,res) => {

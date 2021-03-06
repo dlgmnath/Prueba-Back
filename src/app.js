@@ -4,6 +4,9 @@ import morgan from 'morgan'
 
 import cuponesRoutes from './routes/cupones.routes' 
 import authRoutes from './routes/auth.routes' 
+import usuarioRoutes from './routes/usuario.routes' 
+import productoRoutes from './routes/productos.routes' 
+
 import {crearRoles } from './libs/initialSetup'
 
 const app = express()
@@ -24,4 +27,6 @@ app.get('/', (req,res) => {
 
 app.use('/api/cupones', cuponesRoutes)
 app.use('/api/auth', authRoutes)
+app.use('/api/usuario', usuarioRoutes)
+app.use('/api/producto', productoRoutes)
 export default app;
