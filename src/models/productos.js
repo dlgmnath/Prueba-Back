@@ -1,8 +1,3 @@
-{
-    id: 1, // number
-    'name': 'prod name' //  string
-}
-
 import { Schema, model } from 'mongoose'
 
 const ProductoSchema = new Schema (

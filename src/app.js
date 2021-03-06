@@ -5,6 +5,7 @@ import morgan from 'morgan'
 import cuponesRoutes from './routes/cupones.routes' 
 
 const app = express()
+app.use(express.json())
 app.set('packJson',packJson)
 
 app.use(morgan('dev'));
